@@ -1,6 +1,12 @@
 * {
     font-size: 1em;
 }
+
+body, :root {
+    --bulma-body-font-size: min(2vmin, 16px);
+    font-size: var(--bulma-body-font-size);
+}
+
 /* Sets the slide size and text behavior to better gives the slide illusion */
 .slide-frame {
     height: 100vh;
