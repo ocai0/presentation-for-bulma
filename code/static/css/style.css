@@ -1,0 +1,35 @@
+* {
+    font-size: 1em;
+}
+/* Sets the slide size and text behavior to better gives the slide illusion */
+.slide-frame {
+    height: 100vh;
+}
+
+/* Effectively hides the scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.is-fixed {
+    position: fixed!important;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.start-0 {
+    left: 0;
+}
+
+.top-0 {
+    top: 0;
+}
+
+*:fullscreen
+*:-ms-fullscreen,
+*:-webkit-full-screen,
+*:-moz-full-screen {
+   overflow: auto !important;
+}
