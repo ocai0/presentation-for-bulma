@@ -1,6 +1,6 @@
 class PicoSlider {
     slides = [];
-    current = -1;
+    current = 0;
     DIRECTION_KEYS = {
         'ArrowLeft': -1,
         'ArrowRight': 1,
@@ -11,13 +11,18 @@ class PicoSlider {
         this.slides = Array.from(document.querySelectorAll(selector))
         if(addClickListeners) this.addClickListener();
         if(addArrowListeners) this.addArrowListener();
+
+        this.killScroll()
     }
-    
+    killScroll() {
+        window.addEventListener('scroll', () => window.scroll(0, this.slides[this.current].offsetTop))
+    }
+
     addArrowListener() {
         const _keyPressHandler = (evt) => {
-            this.killNativeEvents(evt)
             const _direction = this.DIRECTION_KEYS[evt.code]
             if(!_direction) return console.warn(`direction not defined: ${evt.code}`);
+            this.killNativeEvents(evt)
             const _index = clamp(_direction + this.current, 0, this.slides.length - 1)
             this.navigateTo(_index)
 
