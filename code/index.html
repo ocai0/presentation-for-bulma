@@ -1,121 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uma apresentação simples sobre Bulma</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
     <script src="./static/js/pico-slider.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <nav class="is-fixed m-5 start-0 top-0">
-            <button class="fullscreen-toggle button is-info is-flex p-2">
-                <i class="fa-solid fa-face-grin-stars"></i>
-                <small class="ml-2">F11 to Fullscreen</small>
-            </button>
-        </nav>
-        <section
-            class="slide-frame has-background-grey-darker is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-            <!-- imgs https://bulma.io/brand/ -->
-            <img src="https://bulma.io/assets/brand/Bulma%20Logo.png" alt="logo-bulma">
-            <article class="authors has-text-white">
-                <h2 class="subtitle is-5">Uma apresentação feita por</h2>
-                <ul class="keep-interaction">
-                    <li>Caio Alves Fernandes</li>
-                    <li>Gabriela Asevedo</li>
-                    <li>Israel Silva</li>
-                    <li>Lucas Ferreira </li>
-                    <li>Maria Clara Marques Lino</li>
-                    <li>Victor Dias</li>
-                </ul>
-            </article>
-        </section>
-        <section class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start">
-            <section class="section">
-                <h2 class="title is-3">Introdução ao Bulma</h2>
-                <ul>
-                    <li>Definição: O que é o Bulma?</li>
-                    <li>Framework CSS open-source</li>
-                    <li>Foco em responsividade e design mobile-first</li>
-                    <li>Criado por Jeremy Thomas em 2016</li>
-                    <li>Leve e fácil de usar</li>
-                    <li>Sem dependência de JavaScript</li>
-                    <li>Possui quase todas as características encontradas nos frameworks mais antigos como o Bootstrap
-                    </li>
-                    <li>Inclui apenas o que você realmente vai usar no projeto</li>
-                </ul>
-                <div class="content">
+      <nav class="is-fixed m-5 start-0 top-0">
+        <button class="fullscreen-toggle button is-info is-flex p-2">
+          <i class="fa-solid fa-face-grin-stars"></i>
+          <small class="ml-2">F11 to Fullscreen</small>
+        </button>
+      </nav>
+      <section
+        class="slide-frame has-background-grey-darker is-flex is-flex-direction-column is-justify-content-center is-align-items-center"
+      >
+        <!-- imgs https://bulma.io/brand/ -->
+        <img
+          src="https://bulma.io/assets/brand/Bulma%20Logo.png"
+          alt="logo-bulma"
+        />
+        <article class="authors has-text-white">
+          <h2 class="subtitle is-3">Uma apresentação feita por:</h2>
+          <ul class="keep-interaction">
+            <li>Caio Alves Fernandes</li>
+            <li>Gabriela Asevedo</li>
+            <li>Israel Silva</li>
+            <li>Lucas Ferreira</li>
+            <li>Maria Clara Marques Lino</li>
+            <li>Victor Dias</li>
+          </ul>
+        </article>
+      </section>
+      <section
+        class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <h2 class="title is-2">Introdução ao Bulma</h2>
+          <ul class="list-disc">
+            <li>
+              O Bulma é um framework CSS de código aberto que facilita o
+              desenvolvimento de interfaces modernas e atraentes.
+            </li>
+            <li>
+              Sendo de código aberto, o Bulma permite que qualquer desenvolvedor
+              contribua com melhorias ou use o framework sem custos.
+            </li>
+            <li>
+              Projetado para ser responsivo desde o início, o Bulma adota uma
+              abordagem mobile-first para garantir que as interfaces sejam
+              otimizadas para dispositivos móveis.
+            </li>
+            <li>
+              Este framework foi lançado em 2016, idealizado por Jeremy Thomas
+              para oferecer uma alternativa leve e flexível.
+            </li>
+            <li>
+              Com uma curva de aprendizado suave, o Bulma é simples de
+              implementar, ajudando desenvolvedores a criarem layouts
+              rapidamente.
+            </li>
+            <li>
+              Ao contrário de outros frameworks, o Bulma se concentra
+              exclusivamente em estilos CSS, sem exigir scripts JavaScript para
+              funcionalidades básicas.
+            </li>
+            <li>
+              Oferece componentes similares ao Bootstrap, mas com um foco maior
+              em leveza e simplicidade.
+            </li>
+            <li>
+              O Bulma evita componentes desnecessários, permitindo que o
+              desenvolvedor personalize e utilize apenas o que for essencial.
+            </li>
+          </ul>
+          <div class="content"></div>
+        </div>
+      </section>
+      <section
+        class="slide-frame has-background-grey-darker is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <h2 class="title is-2">
+            Funcionamento e Principais Tecnologias Utilizadas
+          </h2>
+          <ul class="list-disc">
+            <li>
+              O Bulma utiliza o CSS Flexbox como base, proporcionando layouts
+              flexíveis e responsivos de maneira simplificada.
+            </li>
+            <li>
+              A responsividade é nativa, permitindo que o conteúdo se ajuste
+              automaticamente a diferentes dispositivos e tamanhos de tela.
+            </li>
+            <li>
+              Possui modularidade com classes reutilizáveis, facilitando a
+              estilização e a consistência visual em todo o projeto.
+            </li>
+            <li>
+              Oferece integração com Sass, possibilitando uma customização
+              avançada para atender a necessidades específicas de design.
+            </li>
+            <li>
+              É ideal para quem busca agilidade no design de páginas, mantendo
+              um estilo minimalista e elegante.
+            </li>
+          </ul>
+          <div class="content"></div>
+        </div>
+      </section>
+      <section
+        class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <h2 class="title is-2">Vantagens para o desenvolvimento</h2>
+          <ul class="list-disc">
+            <li>Leve, rápido e de fácil aprendizado</li>
+            <li>Totalmente responsivo desde o início</li>
+            <li>
+              Fácil integração com JavaScript externo para maior interatividade
+            </li>
+            <li>
+              <strong>Moderno:</strong> O Bulma faz uso de sintaxes mais atuais
+              como o Flexbox e variáveis em CSS.
+            </li>
+            <li>
+              <strong>Fácil aprendizado:</strong> O Bulma é muito mais intuitivo
+              em suas classes e consequentemente mais fácil de se aprender a
+              trabalhar.
+            </li>
+            <li>
+              <strong>Sistema de grid simplificado:</strong> Com o Bulma você
+              não precisa ficar declarando no nome da classe quantas colunas
+              você irá utilizar em seu grid, basta adicionar os elementos com a
+              classe .column e elas terão o mesmo tamanho.
+            </li>
+          </ul>
+          <div class="content"></div>
+        </div>
+      </section>
+      <section
+        class="slide-frame has-background-grey-darker is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <h2 class="title is-2">Diferenças em Relação a Outros Frameworks</h2>
+          <ul class="list-disc">
+            <li>
+              O Bulma se destaca por ser totalmente baseado em Flexbox, o que
+              facilita a criação de layouts flexíveis e responsivos, enquanto
+              outros frameworks ainda utilizam diferentes técnicas.
+            </li>
+            <li>
+              Sua estrutura é completamente modular, permitindo que o
+              desenvolvedor importe apenas os componentes necessários, o que
+              deixa o projeto mais leve e otimizado.
+            </li>
+            <li>
+              Focado exclusivamente no CSS, o Bulma não possui dependências de
+              JavaScript, diferentemente de frameworks como o Bootstrap, que
+              oferecem scripts JS prontos para funcionalidades adicionais.
+            </li>
+            <li>
+              É uma opção mais minimalista e de fácil aprendizado, indicada para
+              desenvolvedores que buscam agilidade e simplicidade no
+              desenvolvimento de interfaces.
+            </li>
+          </ul>
+          <div class="content"></div>
+        </div>
+      </section>
+      <section
+        class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <div>
+            <h2 class="title is-2">Exemplos de uso</h2>
+            <h3 class="subtitle is-4">Botões</h3>
+            <div class="buttons">
+              <button class="button is-primary">Primário</button>
+              <button class="button is-link">Link</button>
+              <button class="button is-info">Info</button>
+              <button class="button is-success">Sucesso</button>
+              <button class="button is-warning">Aviso</button>
+              <button class="button is-danger">Perigo</button>
+            </div>
+            <div class="buttons">
+              <button class="button is-small">Pequeno</button>
+              <button class="button">Normal</button>
+              <button class="button is-medium">Médio</button>
+              <button class="button is-large">Grande</button>
+            </div>
+            <div class="buttons">
+              <button class="button is-primary is-light">Primário Claro</button>
+              <button class="button is-link is-light">Link Claro</button>
+              <button class="button is-danger is-outlined">Perigo Borda</button>
+              <button class="button is-success is-outlined">
+                Sucesso Borda
+              </button>
+            </div>
+
+            <div>
+              <h3 class="subtitle is-4">Cards</h3>
+              <div class="columns">
+                <div class="column is-one-third">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title">Título do Card</p>
+                      <p>Card simples usando Bulma.</p>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </section>
-        <section
-            class="slide-frame has-background-grey-darker is-flex is-justify-content-start is-align-items-flex-start">
-            <section class="section">
-                <h2 class="title is-3">Funcionamento e Principais Tecnologias Utilizadas</h2>
-                <ul>
-                    <li>CSS Flexbox: Base para layouts flexíveis</li>
-                    <li>Responsividade nativa: Ajuste automático para diferentes dispositivos</li>
-                    <li>Modularidade: Estilização com classes reutilizáveis</li>
-                    <li>Integração com Sass para customização avançada</li>
-                    <li>Ideal para quem busca agilidade no design de páginas com um estilo minimalista e elegante.</li>
-                </ul>
-                <div class="content">
+                <div class="column is-one-third">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title">Outro Card</p>
+                      <p>Exemplo de card com conteúdo adicional.</p>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </section>
-        <section class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start">
-            <section class="section">
-                <h2 class="title is-3">Vantagens para o desenvolvimento</h2>
-                <ul>
-                    <li>Leve, rápido e de fácil aprendizado</li>
-                    <li>Totalmente responsivo desde o início</li>
-                    <li>Fácil integração com JavaScript externo para maior interatividade</li>
-                    <li><strong>Moderno:</strong> O Bulma faz uso de sintaxes mais atuais como o Flexbox e variáveis em
-                        CSS.</li>
-                    <li><strong>Fácil aprendizado:</strong> O Bulma é muito mais intuitivo em suas classes e
-                        consequentemente mais fácil de se aprender a trabalhar.</li>
-                    <li><strong>Sistema de grid simplificado:</strong> Com o Bulma você não precisa ficar declarando no
-                        nome da classe quantas colunas você irá utilizar em seu grid, basta adicionar os elementos com a
-                        classe .column e elas terão o mesmo tamanho.
-                    </li>
-                </ul>
-                <div class="content">
+                <div class="column is-one-third">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title">Último Card</p>
+                      <p>
+                        Cards são úteis para organizar informações em seções
+                        separadas.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </section>
-        <section
-            class="slide-frame has-background-grey-darker is-flex is-justify-content-start is-align-items-flex-start">
-            <section class="section">
-                <h2 class="title is-3">Diferenças contra outras frameworks</h2>
-                <h3 class="text-center"> Bulma se diferencia de outras ferramentas de front-end como Bootstrap e
-                    Foundation por ser 100% baseado
-                    em Flexbox, o que facilita a criação de layouts flexíveis e responsivos. Ele também é totalmente
-                    modular, permitindo
-                    que você importe apenas os componentes que precisa, mantendo o projeto mais leve. Ao contrário do
-                    Bootstrap, que oferece
-                    mais personalização de temas e scripts JS prontos, o Bulma é focado no CSS puro,
-                    sem dependências de JavaScript. É mais minimalista e simples de usar, com uma curva de aprendizado
-                    menor.</h3>
-                <div class="content">
-                </div>
-            </section>
-        </section>
-        <section class="slide-frame has-background-grey-ter is-flex is-justify-content-start is-align-items-flex-start">
-            <section class="section">
-                <h2 class="title is-3">Exemplos de uso</h2>
-                <div class="content">
-                </div>
-            </section>
-        </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="content"></div>
+        </div>
+      </section>
+      <section
+        class="slide-frame has-background-grey-darker is-flex is-justify-content-start is-align-items-flex-start"
+      >
+        <div class="section">
+          <h2 class="title is-2">Conclusão</h2>
+          <p class="conclusao">
+            O Bulma é uma excelente escolha para desenvolvedores que buscam
+            criar interfaces modernas, responsivas e leves. O framework oferece
+            uma curva de aprendizado suave, tornando-se ideal tanto para
+            iniciantes quanto para desenvolvedores experientes que buscam uma
+            alternativa mais leve e focada exclusivamente no CSS.
+          </p>
+          <br />
+          <p class="conclusao">
+            Com sua abordagem modular, flexibilidade com CSS puro e foco em
+            simplicidade, o Bulma oferece uma alternativa poderosa e de fácil
+            aprendizado para frameworks mais pesados. Perfeito para quem
+            prioriza rapidez e eficiência sem comprometer o design.
+          </p>
+
+          <div class="content"></div>
+        </div>
+      </section>
     </main>
     <script src="./static/js/main.js"></script>
-</body>
-
+  </body>
 </html>

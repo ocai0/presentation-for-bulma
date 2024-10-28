@@ -1,10 +1,28 @@
 * {
-    font-size: 1em;
+    font-size: 1.075em;
 }
 
 body, :root {
     --bulma-body-font-size: min(2vmin, 16px);
     font-size: var(--bulma-body-font-size);
+}
+
+section ul li, .conclusao{
+    line-height: 2.2em;
+}
+
+section img {
+    width: 400px;
+    margin-bottom: 2em;
+}
+
+.title {
+    padding-bottom: .6em;
+}
+
+.list-disc {
+    list-style-type: circle;
+    margin-left: 1.2em;
 }
 
 /* Sets the slide size and text behavior to better gives the slide illusion */
