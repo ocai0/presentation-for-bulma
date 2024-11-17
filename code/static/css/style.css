@@ -1,10 +1,5 @@
-* {
-    font-size: 1.075em;
-}
-
 body, :root {
-    --bulma-body-font-size: min(2vmin, 16px);
-    font-size: var(--bulma-body-font-size);
+    font-size: min(2.5vmin, 1rem);
 }
 
 section ul li, .conclusao{
