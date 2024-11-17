@@ -147,7 +147,7 @@
                 <b>Open Source</b> - O projeto lançado foi lançadp em 2016, por Jeremy Thomas e está disponível no github para forks ou melhorias
               </li>
               <li>
-                <b>Moderno</b> - A framework se utiliza de flexbox para definir e organizar o conteúdo
+                <b>Moderno</b> - A framework se utiliza de flexbox para definir e organizar o conteúdo, ao invés de usar posicionamentos usando de regras como <code>float</code> e <code>position</code>
               </li>
             </ul>
           </div>
@@ -156,8 +156,42 @@
       <section class="slide-frame hero">
         <div class="hero-body">
           <div class="content is-large">
-            <h2 class="title is-2"></h2>
+            <h2 class="title is-2">Flexibilidade e customizações</h2>
+            <p>Além de ser simples, leve e modular, ela também conta com uma estratégia que facilita a mudança do layout dos componentes e das classes 'helpers', com o uso de diversas variáveis que podem ser manipuladas com o intuito de ser flexível para atender melhor todas as situações.</p>
+            <p>Todos os componentes que o Bulma possui usam de variáveis (Sass e CSS) para definir espaçamentos dentro e fora dos elementos, tipografia, cores, etc..</p>
           </div>
+          <h3 class="subtitle has-text-grey-light is-3 mt-6">Exemplo</h3>
+          
+          <table class="table is-bordered is-stripped">
+            <thead>
+              <tr>
+                <th>
+                  <span class="icon has-text-sass"><i class="fab fa-sass"></i></span>
+                  <span>Sass Variable</span>
+                </th>
+                <th>
+                  <span class="icon has-text-link"><i class="fab fa-css3"></i></span>
+                  <span>CSS Variable</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>$table-color</code></td>
+                <td><code>var(--bulma-table-color)</code></td>
+              </tr>
+              <tr>
+                <td><code>$button-family</code></td>
+                <td><code>var(--bulma-button-family)</code></td>
+              </tr>
+              <tr>
+                <td><code>$content-heading-color</code></td>
+                <td><code>var(--bulma-content-heading-color)</code></td>
+              </tr>
+            </tbody>
+          </table>
+
+
         </div>
       </section>
       <section class="slide-frame hero is-dark">
